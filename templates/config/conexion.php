@@ -8,7 +8,7 @@ function conectarDB() : mysqli{
     $db= mysqli_connect($hostname,$username,$password,$database);
 
         if(!$db){
-            // echo "No se conecto";
+            echo "No se conecto";
             exit;
         }
         else{
