@@ -1,0 +1,41 @@
+<?php
+    require 'templates/config/conexion.php';
+    $db = conectarDB();
+    $query = "SELECT * FROM blog";
+    $blog = mysqli_query($db, $query);
+
+    include 'templates/header.php';
+
+?>
+
+    <main>
+        <picture>
+            <source srcset="build/img/NUESTRO BLOG.webp" type="image/webp">
+            <source srcset="build/img/NUESTRO BLOG.jpg" type="image/jpeg">
+            <img src="build/img/NUESTRO BLOG.jpg" alt="anuncio" loading="lazy">
+        </picture>
+        <h4 class="introduccion">
+            ¿Buscas consejos para tu próxima mudanza?, ¿No sabes cuáles son los pasos a seguir para concretar la renta o venta de una casa?, ¿Quieres conocer las mejores noticias del sector inmobiliario?, nuestro blog está al día con la mejor información que te ayudará a guiar tus próximos pasos a tu siguiente gran inversión.
+        </h4>
+        <div class="articulos-blog">
+            <?php while ($row = mysqli_fetch_assoc($blog)) : ?>
+                <article class="info-servicio">
+                    <picture class="imagen-servicio">
+                        <source srcset="build/img/MAIN.webp" type="image/webp">
+                        <source srcset="build/img/MAIN.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/MAIN.jpg" alt="anuncio-1">
+                    </picture>
+                    <h1><?php echo $row['titulo']; ?></h1>
+                    <p class="texto-servicio">
+                    <?php echo $row['infoprevia']; ?>
+                    </p>
+                    <a href="articulo.php?id=<?php echo $row['id']; ?>" class="boton">Conocer más</a>
+                </article>
+            <?php endwhile; ?>
+        </div>
+        
+    </main>
+
+<?php
+    mysqli_close($db);
+    include 'templates/footer.php';

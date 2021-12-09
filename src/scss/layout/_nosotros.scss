@@ -1,0 +1,85 @@
+.fundadores{
+
+    @include tablet{
+        display: flex;
+    }
+
+    .fundador{
+        margin: 2rem;
+        picture{
+            width: 30rem;
+            margin: auto;
+        }
+    }
+}
+
+.valores{
+    margin-bottom: 4rem;
+    max-width: 100rem;
+    .valor{
+        padding: 0;
+        margin: 0 4rem;
+        .contenido-valor{
+            display: flex;
+            img{
+                height: 3rem;
+                width: 3rem;
+                margin: auto;
+                margin-right: 1rem;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+
+    @include tablet{
+        display: flex;
+        .valor{
+            display: flex;
+            flex-direction: column;
+            margin-right: 4rem;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            &:first-of-type{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.lista-certificaciones{
+    max-width: 30rem;
+    // list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 80rem;
+    li{
+        text-align: justify;
+        
+    }
+
+    @include tablet{
+        max-width: 60rem;
+    }
+    @include desktop{
+        max-width: 80rem;
+    }
+}
+
+.imagenes-certificaciones{
+    picture{
+        width: 20rem;
+        margin: 2rem auto;
+    }
+    @include tablet{
+        display: flex;
+        margin: 2rem 4rem;
+        picture{
+            width: auto;
+            margin: 1rem;
+        }
+    }
+}
