@@ -1,25 +1,30 @@
-// .banner{
-//     background-repeat: no-repeat;
-//     background-position: 10% 0%;
-//     background-size: cover ;
-//     // height: 30rem;
-//     @include desktop{
-//         background-position: 60% 50% ;
-//         background-size: cover ;
-//         height: 40rem;
-//     }
-// }
+.banner{
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+    background-size: cover ;
+    height: 14rem;
+    width: auto;
+    @include tablet{
+        background-position: 80% 80%;
+        height: 24rem;
+    }
+    @include desktop{
+        background-position: 60% 50% ;
+        background-size: cover ;
+        height: 34rem;
+    }
+}
 
 #bannerIndex{
     background-image: url(../../../build/img/MAIN.jpg);
 }
 
 #bannerServicios{
-    background-image: url(../../../build/img/MAIN.jpg);
+    background-image: url(../../../build/img/SERVICIOS.jpg);
 }
 
 #bannerInmuebles{
-    background-image: url(../../../build/img/MAIN.jpg);
+    background-image: url(../../../build/img/INMUEBLES.jpg);
 }
 
 #bannerDepartamentos{
@@ -27,19 +32,9 @@
 }
 
 #bannerTerrenos{
-    background-image: url(../../../build/img/MAIN.jpg);
+    background-image: url(../../../build/img/TERRENOS.jpg);
 }
 
 #bannerBlog{
-    background-image: url(../../../build/img/MAIN.jpg);
-}
-
-.banner{
-    @include tablet{
-        height: 40rem;
-        img{
-            height: 100%;
-            width: auto;
-        }
-    }
+    background-image: url(../../../build/img/BLOG.jpg);
 }

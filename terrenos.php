@@ -10,11 +10,8 @@
 ?>
 
     <main>
-        <picture>
-            <source srcset="build/img/TERRENOS.webp" type="image/webp">
-            <source srcset="build/img/TERRENOS.jpg" type="image/jpeg">
-            <img src="build/img/TERRENOS.jpg" alt="anuncio" loading="lazy">
-        </picture>
+        <div class="banner" id="bannerTerrenos">
+        </div>
         <h4 class="introduccion">
             Una de las mejores inversiones que podrías hacer está a solo un clic de distancia, recuerda que uno de nuestros asesores especializados en venta o renta de departamentos siempre estará disponible para brindarte ayuda personalizada.
         </h4>

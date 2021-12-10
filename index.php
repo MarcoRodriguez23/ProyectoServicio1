@@ -13,10 +13,8 @@
 ?>
 
     <main id="index">
-        <picture>
-            <source srcset="build/img/MAIN.webp" type="image/webp">
-            <source srcset="build/img/MAIN.jpg" type="image/jpeg">
-            <img src="build/img/MAIN.jpg" alt="Banner" loading="lazy">
+        <div class="banner" id="bannerIndex">
+        </div>
         <div class="contenedor principal-izq">
             <div class="texto-principal">
                 <!-- <h2>Gallardo <span>Holdings</span></h2> -->

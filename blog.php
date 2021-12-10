@@ -9,11 +9,8 @@
 ?>
 
     <main>
-        <picture>
-            <source srcset="build/img/NUESTRO BLOG.webp" type="image/webp">
-            <source srcset="build/img/NUESTRO BLOG.jpg" type="image/jpeg">
-            <img src="build/img/NUESTRO BLOG.jpg" alt="anuncio" loading="lazy">
-        </picture>
+        <div class="banner" id="bannerBlog">
+        </div>
         <h4 class="introduccion">
             ¿Buscas consejos para tu próxima mudanza?, ¿No sabes cuáles son los pasos a seguir para concretar la renta o venta de una casa?, ¿Quieres conocer las mejores noticias del sector inmobiliario?, nuestro blog está al día con la mejor información que te ayudará a guiar tus próximos pasos a tu siguiente gran inversión.
         </h4>

@@ -10,11 +10,8 @@
 ?>
 
     <main>
-        <picture>
-            <source srcset="build/img/INMUEBLES.webp" type="image/webp">
-            <source srcset="build/img/INMUEBLES.jpg" type="image/jpeg">
-            <img src="build/img/INMUEBLES.jpg" alt="anuncio" loading="lazy">
-        </picture>
+        <div class="banner" id="bannerInmuebles">
+        </div>
         <h4 class="introduccion">
             La expansión de tu negocio o tu próxima oficina no pueden esperar más, recuerda que uno de nuestros asesores especializados en venta o renta de inmuebles siempre estará disponible para brindarte ayuda personalizada.
         </h4>

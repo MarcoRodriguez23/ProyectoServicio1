@@ -9,11 +9,8 @@
 ?>
 
     <main>
-        <picture>
-            <source srcset="build/img/SERVICIOS.webp" type="image/webp">
-            <source srcset="build/img/SERVICIOS.jpg" type="image/jpeg">
-            <img src="build/img/SERVICIOS.jpg" alt="anuncio" loading="lazy">
-        </picture>
+        <div class="banner" id="bannerServicios">
+        </div>
         <h4 class="introduccion">
             Permítenos ser parte de tu siguiente paso hacia el futuro y guiarte con nuestra experiencia a concretar una de tus mejores inversiones en la vida.
         </h4>
