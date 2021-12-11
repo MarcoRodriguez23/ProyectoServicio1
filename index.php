@@ -16,6 +16,9 @@
         <div class="banner" id="bannerIndex">
         </div>
         <div class="contenedor principal-izq">
+            <div class="imagen-principal">
+                <img loading="lazy" src="build/img/conocenos.jpg" alt="familia feliz">
+            </div>
             <div class="texto-principal">
                 <!-- <h2>Gallardo <span>Holdings</span></h2> -->
                 <p>
@@ -23,13 +26,7 @@
                 </p>
                 <a href="servicios.php" class="boton">Explorar</a>
             </div>
-            <div class="imagen-principal">
-                <picture>
-                    <source srcset="build/img/conocenos.webp" type="image/webp">
-                    <source srcset="build/img/conocenos.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/conocenos.jpg" alt="familia feliz">
-                </picture>
-            </div>
+            
         </div>
     </main>
 

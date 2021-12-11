@@ -10,25 +10,18 @@
 ?>
 
     <main>
-        <!-- <picture>
-            <source srcset="build/img/DEPARTAMENTOS.webp" type="image/webp">
-            <source srcset="build/img/DEPARTAMENTOS.jpg" type="image/jpeg">
-            <img class="banner" src="build/img/DEPARTAMENTOS.jpg" alt="anuncio" loading="lazy">
-        </picture> -->
         <div class="banner" id="bannerDepartamentos">
         </div>
-        <h4 class="introduccion">
-            
-        </h4>
         <div class="contenedor principal-der">
+            <div class="imagen-principal">
+                <img loading="lazy" src="build/img/departamenmto.png" alt="departamentos">
+            </div>
             <div class="texto-principal">
                 <p>
                     Tu siguiente departamento espera por ti, recuerda que uno de nuestros asesores especializados en venta o renta de departamentos siempre estará disponible para brindarte la mejor ayuda personalizada.
                 </p>
             </div>
-            <div class="imagen-principal">
-                <img loading="lazy" src="build/img/departamenmto.png" alt="departamentos">
-            </div>
+            
         </div>
         <div class="anuncios anunciosD">
             <!-- aqui se va ir generando los anuncios de los departamentos -->

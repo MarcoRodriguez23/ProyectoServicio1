@@ -5,11 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap');
 // Fuentes
 // $fuente_principal: 'Lato', sans-serif;
 // $fuente_principal: 'Playfair Display', sans-serif;
 // $fuente_principal: 'Lora', sans-serif;
-$fuente_principal: 'Barlow', sans-serif;
+// $fuente_principal: 'Barlow', sans-serif;
+// $fuente_principal: 'Lato', sans-serif;
+$fuente_principal: 'Montserrat', sans-serif;
 
 
 // Tamaño de Media Queries
@@ -21,14 +25,15 @@ $desktop: 1024px;
 $negro: #1b1b1b;
 $blanco: #FFFFFF;
 $rojo: #9a0c1a;
-$gris: #4c5b62;
-$verde: #ADFF2F;
+$gris: #717e85;
+$verde: #71b100;
 $verdePrincipal: #09302b;
 $amarillo: #f9bc60;
-$salmon: #e16162;
-$blanco-gris: #e8e4e6;
+// $salmon: #e16162;
+$blanco-gris: #eeeeee;
 $azul: #396c8a;
-$naranja: #b15d28da;
+$naranja: #c95e1c;
+$cafe :#9c7761;
 
 $separacion: 5rem;
 

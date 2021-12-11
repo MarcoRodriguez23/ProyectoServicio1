@@ -16,15 +16,11 @@
         </h4>
         <div class="anuncios" id="servicios">
             <?php while ($row = mysqli_fetch_assoc($servicios)) : ?>
-                <div class="anuncio">
+                <div class="anuncio sombra">
                     <a href="servicio.php?id=<?php echo $row['id'] ?>" class="info-anuncio">
+                        <img loading="lazy" src="build/img/MAIN.jpg" alt="<?php $row['id']; ?>">
                         <h2><?php echo $row['titulo'] ?></h2>
                     </a>
-                    <picture>
-                        <source srcset="build/img/MAIN.webp" type="image/webp">
-                        <source srcset="build/img/MAIN.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/MAIN.jpg" alt="<?php $row['id']; ?>">
-                    </picture>
                 </div>
             <?php endwhile;?>
         </div>

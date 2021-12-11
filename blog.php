@@ -11,9 +11,17 @@
     <main>
         <div class="banner" id="bannerBlog">
         </div>
-        <h4 class="introduccion">
-            ¿Buscas consejos para tu próxima mudanza?, ¿No sabes cuáles son los pasos a seguir para concretar la renta o venta de una casa?, ¿Quieres conocer las mejores noticias del sector inmobiliario?, nuestro blog está al día con la mejor información que te ayudará a guiar tus próximos pasos a tu siguiente gran inversión.
-        </h4>
+        <div class="contenedor principal-der">
+            <div class="imagen-principal">
+                <img loading="lazy" src="build/img/blog.png" alt="blog">
+            </div>
+            <div class="texto-principal">
+                <p>
+                    ¿Buscas consejos para tu próxima mudanza?, ¿No sabes cuáles son los pasos a seguir para concretar la renta o venta de una casa?, ¿Quieres conocer las mejores noticias del sector inmobiliario?, nuestro blog está al día con la mejor información que te ayudará a guiar tus próximos pasos a tu siguiente gran inversión.
+                </p>
+            </div>
+            
+        </div>
         <div class="articulos-blog">
             <?php while ($row = mysqli_fetch_assoc($blog)) : ?>
                 <article class="info-servicio">

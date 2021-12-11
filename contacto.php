@@ -3,13 +3,14 @@
 
 ?>
 
-    <main class="formulario-texto">
-        <div class="contenedor">
+    <main>
+        <div class="banner" id="bannerContacto">
+        </div>
+        <div class="contenedor formulario-texto">
             <h1>Contáctanos</h1>
             <p>
-                Por favor, complete los campos a continuación y luego haga clic en enviar.
+                Por favor, complete los campos a continuación y luego haga clic en enviar.<br>Estaremos en contacto.
             </p>
-            <p>Estaremos en contacto.</p>
         </div>
         <div class="color-formulario">
 

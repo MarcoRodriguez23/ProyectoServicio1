@@ -8,7 +8,7 @@
 
 .boton{
     @include boton();
-    background-color: $amarillo;
+    background-color: $naranja;
 }
 
 
@@ -104,18 +104,41 @@
 }
 
 .principal-izq, .principal-der{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 2rem auto;
+    a{
+        margin: 0 auto;
+    }
+    padding: 1rem;
+        .imagen-principal{
+            margin: 2rem 0;
+            // margin: 4rem auto 0 auto;
+            img{
+                width: auto;
+                height: 20rem;
+                margin: auto;
+            }
+    }
+        .texto-principal{
+            text-align: center;
+            margin-top: 4rem;
+            &::before{
+                content: '';
+                display: block;
+                height: 0.5rem;
+                width: 80%;
+                background-color: $verdePrincipal;
+                margin: auto;
+            }
+    }
 
 
     @include tablet{
         grid-auto-flow: column;
-        h2,a{
-            margin: 0;
-        }
+
         .texto-principal{
             margin: auto;
-            border-top: 4px solid $verdePrincipal;
+            // border-top: 4px solid $verdePrincipal;
+            
         }
         .imagen-principal{
             margin: auto;

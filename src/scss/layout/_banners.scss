@@ -38,3 +38,14 @@
 #bannerBlog{
     background-image: url(../../../build/img/BLOG.jpg);
 }
+
+#bannerContacto{
+    background-image: url(../../../build/img/contacto.jpg);
+    background-position: 50% 0%;
+    @include tablet{
+        background-position: 50% 0%;
+    }
+    @include desktop{
+        background-position: 50% 0%;
+    }
+}
