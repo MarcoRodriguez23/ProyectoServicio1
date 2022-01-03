@@ -35,13 +35,22 @@
     .carrousel-items{
         overflow: hidden;
         border-radius: 1rem;
-        img{      
+        
+        .imagen-texto{
+            display: flex;
+            flex-direction: column;
             margin: 1rem;
-            max-height: 20rem;
-            background-position: center center !important;
-            object-fit: contain;
-            @include tablet{
-                max-height: 40rem;
+            img{      
+                max-height: 20rem;
+                background-position: center center !important;
+                object-fit: contain;
+                @include tablet{
+                    max-height: 40rem;
+                }
+            }
+            p{
+                text-align: center;
+                font-weight: $bold;
             }
         }
         
