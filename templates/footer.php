@@ -2,7 +2,7 @@
     <div class="footer-superior">
         <div class="footer-logo">
             <a href="index.php" class="logotipo">
-                <img  src="build/img/logo.jpeg" alt="Logotipo">
+                <img  src="build/img/GALLARDO SVG.svg" alt="Logotipo">
             </a>
         </div>
         <div class="footer-informacion">

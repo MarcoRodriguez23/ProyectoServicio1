@@ -19,7 +19,8 @@
 }
 
 .articulos-blog{
-    margin: 3rem 0;
+    margin: 3rem auto;
+    width: 92%;
 
     @include tablet{
         @include grid(2,2rem);

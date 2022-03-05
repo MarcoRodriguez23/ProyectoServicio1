@@ -6,8 +6,8 @@
     $ConsultaT = "SELECT id,calle,delegacion,colonia FROM terrenos";
     $ConsultaI = "SELECT id,calle,delegacion,colonia FROM inmuebles";
     $dep = mysqli_query($db, $ConsultaD);
-    $inm = mysqli_query($db, $ConsultaI);
-    $terr = mysqli_query($db, $ConsultaT);
+    $inm = mysqli_query($db, $ConsultaD);
+    $terr = mysqli_query($db, $ConsultaD);
 
     include 'templates/header.php';
 ?>
@@ -43,14 +43,14 @@
             </button>
             <div class="carrousel-items" id="C-inmuebles">
                 <!-- <aqui se van a ir agregando las imagenes -->
-                <?php while($row = mysqli_fetch_assoc($inm)): ?>
+                    <?php while($row = mysqli_fetch_assoc($inm)): ?>
                         <?php
                             $unaImagen=true;
-                                foreach (glob("build/img/inmG/${row['id']}/*.webp") as $filename): ?>
+                                foreach (glob("build/img/depG/${row['id']}/*.webp") as $filename): ?>
                                     <?php if($unaImagen===true) : ?>
                                         <div class="imagen-texto">
-                                            <img loading="lazy" src="<?php echo $filename; ?>" alt="inmueble <?php echo $row['id']; ?>">
-                                            <p><?php echo "Casa en venta en CDMX, " . $row['delegacion']; ?></p>
+                                            <img loading="lazy" src="<?php echo $filename; ?>" alt="departamento <?php echo $row['id']; ?>">
+                                            <p><?php echo "Departamento en venta en CDMX, " . $row['delegacion']; ?></p>
                                         </div>
                                     <?php
                                         $unaImagen=false;
@@ -117,14 +117,14 @@
             </button>
             <div class="carrousel-items" id="C-terrenos">
                 <!-- <aqui se van a ir agregando las imagenes -->
-                <?php while($row = mysqli_fetch_assoc($terr)): ?>
+                    <?php while($row = mysqli_fetch_assoc($terr)): ?>
                         <?php
                             $unaImagen=true;
-                                foreach (glob("build/img/terrG/${row['id']}/*.webp") as $filename): ?>
+                                foreach (glob("build/img/depG/${row['id']}/*.webp") as $filename): ?>
                                     <?php if($unaImagen===true) : ?>
                                         <div class="imagen-texto">
-                                            <img loading="lazy" src="<?php echo $filename; ?>" alt="terreno <?php echo $row['id']; ?>">
-                                            <p><?php echo "Terrenos en venta en CDMX, " . $row['delegacion']; ?></p>
+                                            <img loading="lazy" src="<?php echo $filename; ?>" alt="departamento <?php echo $row['id']; ?>">
+                                            <p><?php echo "Departamento en venta en CDMX, " . $row['delegacion']; ?></p>
                                         </div>
                                     <?php
                                         $unaImagen=false;

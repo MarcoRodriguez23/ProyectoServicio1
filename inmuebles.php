@@ -2,7 +2,7 @@
     require 'templates/config/conexion.php';
     $db = conectarDB();
     //obteniendo los inmuebles
-    $query = "SELECT * FROM inmuebles";
+    $query = "SELECT * FROM departamentos";
     $inmuebles = mysqli_query($db, $query);
 
     include 'templates/header.php';
@@ -35,9 +35,9 @@
                     <a href="departamento.php?id=<?php echo $row['id']; ?>">
                         <?php
                         $unaImagen=true;
-                            foreach (glob("build/img/terrG/${row['id']}/*.webp") as $filename): ?>
+                            foreach (glob("build/img/depG/${row['id']}/*.webp") as $filename): ?>
                                 <?php if($unaImagen===true) : ?>
-                                    <img loading="lazy" src="<?php echo $filename; ?>" alt="inmueble <?php echo $row['id']; ?>">
+                                    <img loading="lazy" src="<?php echo $filename; ?>" alt="departamento <?php echo $row['id']; ?>">
                                 <?php
                                     $unaImagen=false;
                                 endif; ?> 
@@ -50,6 +50,24 @@
                                 <?php echo $row['calle'].", ".$row['colonia'].", ".$row['delegacion'] ; ?>
                             </h2>
                             
+                        </div>
+                        <div class="beneficios">
+                            <div class="beneficio">
+                                <img src="build/img/icono_dormitorio.svg" alt="beneficio1">
+                                <p>4 rec</p>
+                            </div>
+                            <div class="beneficio">
+                                <img src="build/img/icono_wc.svg" alt="beneficio1">
+                                <p>2 wc</p>
+                            </div>
+                            <div class="beneficio">
+                                <img src="build/img/icono_estacionamiento.svg" alt="beneficio1">
+                                <p>2 est</p>
+                            </div>
+                            <div class="beneficio">
+                                <img src="build/img/medida.svg" alt="beneficio1">
+                                <p>72 m2</p>
+                            </div>   
                         </div>
                     </a> 
                 </div>

@@ -40,7 +40,7 @@ $message .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
 
-$para = '1nm12rlma@gmail.com';
+$para = 'marco_ben2010@hotmail.com';
 
 if(!($empresa==='')){
     $asunto = 'La empresa '.$empresa." esta interesada en un ".$interes." '\r\n";
@@ -49,6 +49,6 @@ else{
     $asunto = $nombre." esta interesad@ en un ".$interes." '\r\n";
 }
 
-mail($para, $asunto, utf8_decode($message), $header);
+mail($para, $asunto, utf8_decode($message));
 
 header("Location:index.php");

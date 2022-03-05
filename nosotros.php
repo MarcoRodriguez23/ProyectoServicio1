@@ -33,9 +33,7 @@
             </div>
             <div class="imagen-principal">
                 <picture>
-                    <source srcset="build/img/escaleras.webp" type="image/webp">
-                    <source srcset="build/img/escaleras.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/escaleras.jpg" alt="misión">
+                    <img loading="lazy" src="build/img/mision.webp" alt="misión">
                 </picture>
             </div>
         </div>
@@ -49,15 +47,13 @@
             </div>
             <div class="imagen-principal">
                 <picture>
-                    <source srcset="build/img/escaleras.webp" type="image/webp">
-                    <source srcset="build/img/escaleras.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/escaleras.jpg" alt="visión">
+                    <img loading="lazy" src="build/img/vision.webp" alt="visión">
                 </picture>
             </div>
         </div>
     </section>
 
-    <section>
+    <!-- <section>
         <h2>Valores</h2>
         <div class="valores contenedor">
             <ul class="valor">
@@ -106,7 +102,7 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
 <?php
     include 'templates/footer.php';

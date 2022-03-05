@@ -18,8 +18,8 @@
             <?php while ($row = mysqli_fetch_assoc($servicios)) : ?>
                 <div class="anuncio sombra">
                     <a href="servicio.php?id=<?php echo $row['id'] ?>" class="info-anuncio">
-                        <img loading="lazy" src="build/img/MAIN.jpg" alt="<?php $row['id']; ?>">
-                        <h2><?php echo $row['titulo'] ?></h2>
+                        <img loading="lazy" src="build/img/<?php echo $row['imagen']; ?>" alt="<?php $row['id']; ?>">
+                        <h2><?php echo $row['titulo']; ?></h2>
                     </a>
                 </div>
             <?php endwhile;?>

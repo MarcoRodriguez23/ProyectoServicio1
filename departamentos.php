@@ -48,6 +48,24 @@
                             </h2>
                             
                         </div>
+                        <div class="beneficios">
+                            <div class="beneficio">
+                                <img src="build/img/icono_dormitorio.svg" alt="beneficio1">
+                                <p>4 rec</p>
+                            </div>
+                            <div class="beneficio">
+                                <img src="build/img/icono_wc.svg" alt="beneficio1">
+                                <p>2 wc</p>
+                            </div>
+                            <div class="beneficio">
+                                <img src="build/img/icono_estacionamiento.svg" alt="beneficio1">
+                                <p>2 est</p>
+                            </div>
+                            <div class="beneficio">
+                                <img src="build/img/medida.svg" alt="beneficio1">
+                                <p>72 m2</p>
+                            </div>   
+                        </div>
                     </a> 
                 </div>
             <?php endwhile; ?>

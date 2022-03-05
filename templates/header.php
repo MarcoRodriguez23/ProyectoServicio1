@@ -12,7 +12,7 @@
     <header class="header">
         <div class="contenedor barra">
             <a href="index.php" class="logotipo">
-                <img  src="build/img/logo.jpeg" alt="Logotipo">
+                <img  src="build/img/GALLARDO SVG.svg" alt="Logotipo">
             </a>
             <div class="mobile-menu">
                 <img src="build/img/barras.svg" alt="icono-responsive">
