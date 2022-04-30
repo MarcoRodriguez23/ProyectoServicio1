@@ -1,102 +1,54 @@
-// //HEADER
-// .header {
-//     background-color: $verdePrincipal;
-//     padding: 1rem 0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     @include tablet{
-//         min-height: 10vh;
-//         height: auto;
-//     }
-// }
-
-// .logotipo{
-//     filter: invert(100%);
-//     margin: 0 auto;
-//     margin-bottom: 2rem;
-//     width: 5rem;
-//     img{
-//         width: 100%;
-//     }
-//     @include tablet{
-//         width: 7rem;
-//     }
-//     @include desktop{
-//         // width: 10rem;
-//         margin: 0;
-//     }
-// }
-// // .footer .logotipo{
-// //     margin: 0 auto;
-// //     @include tablet{
-// //         margin: 0;
-// //         width: 6rem;
-// //     }
-// // }
-
-//NAVEGACION
-// .barra{
-//     @include tablet{
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-        
-//     }
-//     @include tablet {
-//         display: grid;
-//         grid-template-columns: 30% 70%;
-//     }
-// }
-
+//REVISAR UTILIDAD EN EL PROYECTO
 .navegacion{
-    margin-top: 1rem;
     visibility: hidden;
     opacity: 0;
     height: 0;
     transition:  opacity .3s linear, height 0.5s linear;
-    // margin: 0.5rem 0;
-    
+    margin-bottom: 2rem;
     a{
+        // border: 1px solid white;
         color: $blanco;
         font-size: 2.4rem;
         font-weight: $bold;
         text-align: center;
-        // transition: all 600ms ease;
-    &:hover{
-        transform: scale(1.2);
+        width: 60%;
+        margin: auto;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
-        
+    span{
+        // border: 1px solid white;
+        color: $blanco;
+        font-size: 2.4rem;
+        font-weight: $bold;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+        }
     }
     display: flex;
     flex-direction: column;
     align-items: center;
     @include tablet{
-        margin-top: 1rem;
+        margin-bottom: 0;
         opacity: 1;
         visibility: visible;
         height: auto;
         flex-direction: row;
         a{
-            font-size: 1.8rem;
-            // margin-right: 2.2rem ;
-            // &:last-of-type {
-            // margin: 0;
-            // }
+            font-size: 1.4rem;
+        }
+        span{
+            font-size: 1.4rem;
         }
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(5,1fr);
     }
-    @include desktop{
-        grid-template-columns: repeat(8,1fr);
-        a{
-            font-size: 1.4rem;
-            margin-right: 3rem ;
-            &:last-of-type {
-            margin: 0;
-            }
-        }
-    }
+
 }
 
 /*Menu de hamburguesa*/
@@ -126,21 +78,39 @@
 }
 
 .header{
-    background-color: $verdePrincipal;
-    padding: 1rem;
+    
+    background-color: $verde;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    #enlaces-inmuebles{
+        display: none;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        li{
+            width: 100%;
+        }
+    }
     @include tablet{
         min-height: 10vh;
         height: auto;
+        #enlaces-inmuebles{
+            background-color: $verde;
+            position: absolute;
+            top: 52%;
+            left: 56%;
+            width: auto;
+            padding: 1rem 2rem;
+        }
     }
 }
 
 .logotipo{
     filter: invert(100%);
     display: block;
-    // border: 4px solid black;
     width: 60%;
     margin: auto;
     text-align: center;
@@ -150,6 +120,23 @@
         margin: auto;
     }
     @include tablet{
-        width: 25%;
+        width: 35%;
     }
+}
+
+.barra{
+    .logotipo{
+        width: 40%;
+        min-width: 10rem;
+        max-width: 20rem;
+        padding: 1rem;
+    }
+    @include tablet{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+}
+
+.mostrar-enlaces{
+    display: block !important ;
 }

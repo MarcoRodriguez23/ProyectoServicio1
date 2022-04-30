@@ -1,141 +1,24 @@
-// .anuncios, #servicios{
-//     @include grid(2,1rem);
-//     margin: 2rem;
-//     .anuncio{
-//         margin: 1rem;
-//         position: relative;
-//         &:hover{
-//             cursor: pointer;
-//         }
-//         img{
-//             border-radius: 1rem;
-//         }
-//         .info-anuncio{
-//             margin: 0;
-//             h2,p{
-//                 visibility: hidden;
-//                 opacity: 0;
-//                 margin: 0;
-//             }
-//             &:hover{
-//                 background-color: rgba($negro, 0.6);
-//                 border-radius: 1rem;
-//                 h2,p{
-//                     opacity: 1;
-//                     visibility: visible;
-//                 }
-//             }
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             align-items: center;
-//             h2{
-//                 font-size: 1.2rem;
-//                 font-weight: $bold;
-//                 margin: 0 2rem;
-//             }
-//             p{
-//                 font-size: 1.2rem;
-//             }
-//             @include desktop{
-//                 h2{
-//                     font-size: 2.2rem;
-//                     margin: 0 4rem;
-                   
-//                 }
-//                 p{
-//                     font-size: 2rem;
-//                 }
-//             }
-//         }
-//     }
-// }
+//CSS REVISADO
 
-
-// .anuncios{
-//     @include tablet{
-//         @include grid(4,2rem);
-//     }
-// }
-
-// #servicios{
-//     @include tablet{
-//         @include grid(3,2rem);
-//     }
-// }
-
-
-// .precio{
-//     color: $verde;
-// }
-// .anuncio{
-//     transition: all 600ms ease;
-//     &:hover{
-//         transform: scale(1.1);
-//     }
-// }
-
-// .anuncios{
-//     padding: 1rem 0;
-//     h2{
-//         color: $blanco;
-//         font-size: 8rem;
-//     }
-//     a,h2{
-//         margin: 1rem 0;
-//     }
-//     picture{
-//         height: 100%;
-//         img{
-//             height: 100%;
-//         }
-//     }
-
-//     @include tablet{
-//         h2{
-//             font-size: 4rem;
-//         }
-//     }
-// }
-
-.imagen-servicio{
-    width: 100%;
-    margin: auto;
-    img{
-        border-radius: 1rem;
-    }
-}
-.info-servicio{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    .texto-servicio{
-        margin: 2rem 4rem;
-    }
-    .boton{
-        display: inline-block;
-        margin: 0 auto;
-    }
-}
+//DISEÑO DE LOS ANUNCIOS (PLANTILLAS) DE LAS PROPIEDADES
 
 .anuncios{
     @include grid(2,2rem);
     margin: 4rem 2rem;
  
     .anuncio{
-        border-radius: 1rem;
+        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: $blanco-gris;
+        background-color: $blanco;
         // border: 1px solid black;
             img{
                 width: 90%;
                 height: auto;
                 margin: 2rem auto;
+                border-radius: 1rem;
+                object-fit: cover;
             }
         .info-anuncio{
             display: flex;
@@ -149,7 +32,6 @@
                 font-weight: 500;
             }
             p{
-                color: $verde;
                 font-weight: $regular;
                 margin: 0.5rem 0;
                 font-size: 2rem;
@@ -159,7 +41,7 @@
                 display: block;
                 height: 0.2rem;
                 width: 80%;
-                background-color: $naranja;
+                background-color: $morado;
                 margin: auto;
             }
             
@@ -182,7 +64,6 @@
                     font-weight: 500;
                 }
                 p{
-                    color: $verde;
                     font-weight: $bold;
                     margin: 1rem 0;
                     font-size: 2rem;
@@ -192,25 +73,25 @@
     }
 }
 
-#servicios{
-    .anuncio{
-        border-radius: 0;
-        .info-anuncio{
-            &::before{
-                content: '';
-                display: none;
-                height: 0;
-                width: 0;
-                margin: 0;
-            }
-        }
-    }
-    display: flex;
-    flex-direction: column;
-    @include tablet{
-        @include grid(3,2rem);
-    }
-}
+// #servicios{
+//     .anuncio{
+//         border-radius: 0;
+//         .info-anuncio{
+//             &::before{
+//                 content: '';
+//                 display: none;
+//                 height: 0;
+//                 width: 0;
+//                 margin: 0;
+//             }
+//         }
+//     }
+//     display: flex;
+//     flex-direction: column;
+//     @include tablet{
+//         @include grid(3,2rem);
+//     }
+// }
 
 .ubicacion{
     display: flex;
@@ -222,4 +103,9 @@
         width: 90%;
         margin: auto;
     }
+}
+
+
+.precio{
+    color: $verde;
 }

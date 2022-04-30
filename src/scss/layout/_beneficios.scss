@@ -1,15 +1,14 @@
+//CODIGO PARA EL DISEÑO DE LA SECCION DE BENEFICIOS
+
 .beneficios{
     margin:1rem 0;
     @include grid(2,1rem);
-    // display: flex;
-    // justify-content: space-between;
     width: 100%;
     .beneficio{
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
-        // border-right: 1px solid $gris;
         &:last-of-type{
             border-right: none;
         }
@@ -23,10 +22,5 @@
             font-size: 1.2rem;
             margin: auto 0.8rem; 
         }
-        // @include tablet{
-        //     img{
-        //         width: 3rem;
-        //     }
-        // }
     }
 }

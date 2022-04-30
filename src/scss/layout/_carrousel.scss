@@ -1,3 +1,5 @@
+//DISEÑO DE LOS CARROUSELES DEL INDEX
+
 .carrousel-contenedor{
     position: relative;
     .carrousel__anterior,.carrousel__siguiente{
@@ -36,6 +38,7 @@
         overflow: hidden;
         border-radius: 1rem;
         
+        
         .imagen-texto{
             display: flex;
             flex-direction: column;
@@ -53,7 +56,6 @@
                 font-weight: $bold;
             }
         }
-        
     }
 }
 
@@ -85,26 +87,21 @@
     top:calc(40% -1rem);
 }
 
-// #C-seleccion{
-//     .glider-track{
-//         width: 2rem; 
-//     }
-//     .carrousel-elemento{
-//         max-width: 1rem;
-//         height: 3rem;
-//         img{
-//             max-width: 1rem;    
-//         }
-//     }
-// }
-
-.carrousel-items{
-    .carrousel-elemento{
-        // height: 50% !important;
-        // width: auto;
-        // object-fit: contain !important;
-        // img{
-        //     height: 1rem;
-        // }
+#C-seleccion{
+    width: 95%;
+    .glider-track{
+        // background-color: $blanco;
+        width: 2rem; 
+        gap: 2rem;
+        padding: 0 1rem;
     }
+
+}
+
+.contenedor-carrousel-admin{
+    width: 40%;
+    margin: auto;
+}
+#C-admin{
+    margin: auto;
 }

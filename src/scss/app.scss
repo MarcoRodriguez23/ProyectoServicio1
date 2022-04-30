@@ -14,7 +14,18 @@
 @import 'layout/footer';
 @import 'layout/navegacion';
 @import 'layout/nosotros';
-@import 'layout/seleccion';
+@import 'layout/propiedadSeleccionada';
 @import 'layout/testimoniales';
 @import 'layout/beneficios';
+@import 'layout/servicios';
+@import 'layout/contacto';
 
+@import 'admin/sidebar';
+@import 'admin/formulario';
+@import 'admin/seccionesformulario';
+@import 'admin/agenda';
+@import 'admin/filtro';
+@import 'admin/representantes';
+@import 'admin/inmuebles';
+@import 'admin/venta';
+@import 'admin/utilidades';

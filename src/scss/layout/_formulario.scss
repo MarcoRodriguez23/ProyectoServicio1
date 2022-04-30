@@ -1,8 +1,8 @@
 .formulario-texto{
     p{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: center;
-        line-height: 1.8;
+        line-height: 1.6;
     }
 }
 .color-formulario{
@@ -13,10 +13,10 @@
     margin-bottom: 2rem;
 
 }
-.formulario{
-    padding: 3rem 0;
+.formulario-user{
+    padding: 2rem;
     label{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: $regular;
         display: block;
         color: $blanco;
@@ -24,11 +24,11 @@
     input:not([type="submit"])
     ,textarea,select{
         border-radius: 0.5rem;
-        padding: 1rem;
+        padding: 0.8rem;
         display: block;
         width: 100%;
         border: none;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
         
     }
     textarea{
@@ -45,13 +45,33 @@
     
 }
 
-.boton-formulario{
-    display: block;
-    margin: auto;
-    margin-top: 2rem;
+.login{
+    input[type="submit"]{
+        font-size: 1.8rem;
+        padding: 2rem;
+    }
+}
 
+.pantalla-login{
     @include tablet{
-        display: inline-block;
-        margin-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        min-height: 100vh;
+    }
+
+    .imagen-login{
+        height: 20rem;
+        background-image: url('../img/vision.jpg');
+        background-size: cover;
+        background-position: center center;
+        @include tablet{
+            height: auto;
+        }
+    }
+
+    .login-plantilla{
+        width: 95%;
+        margin: 0 auto;
+        padding: 3rem 0;
     }
 }
